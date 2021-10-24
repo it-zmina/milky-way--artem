@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "build-dev": "webpack --config webpack.config.js --mode development",
+    "start": "npx http-server -S -C cert.pem -K key.pem dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.123.0"
+    "three": "^0.133.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
   }
 }
