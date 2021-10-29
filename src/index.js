@@ -38,7 +38,7 @@ function init() {
   camera.position.set( 0, 1.6, 2 );
   // camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-  let cubeGeometry = new THREE.BoxGeometry( 1, 1, 1 );
+  let cubeGeometry = new THREE.BoxGeometry( .7, .7, .7 );
   let cubeMaterial = new THREE.MeshNormalMaterial();
   cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
   scene.add(cube);
